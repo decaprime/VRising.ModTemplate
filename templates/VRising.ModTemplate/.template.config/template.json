@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "deca",
+  "classifications": [
+    "VRising",
+    "Plugin"
+  ],
+  "generatorVersions": "[1.0.0.0-*)",
+  "identity": "VRising.ModTemplate",
+  "name": "Starter project for V Rising mods",
+  "shortName": "vrisingmod",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "MOUTHWASH",
+  "preferNameDirectory": true,  
+  "symbols": {
+    "description": {
+      "type": "parameter",
+      "displayName": "Description",
+      "datatype": "string",      
+      "isRequired": true,
+      "description": "Description of ",
+      "replaces": "My first plugin",
+      "defaultValue": "My first mod"
+    },
+    "UseWetstone": {
+      "type": "parameter",
+      "datatype": "bool",
+      "isRequired": true,
+      "description": "To automatically setup and use Wetstone.",
+      "defaultValue": "false",
+      "displayName": "Use Wetstone"
+    },
+    "UseVCF": {
+      "type": "parameter",
+      "datatype": "bool",
+      "isRequired": true,
+      "description": "To automatically setup and use VampireCommandFramework.",
+      "defaultValue": "false",
+      "displayName": "Use VCF"
+    }
+  }
+}
