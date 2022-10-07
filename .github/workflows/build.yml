@@ -59,7 +59,7 @@ jobs:
         with:
           body: Automatic release of ${{ env.GitVersion_SemVer }} for ${{ env.GitVersion_ShortSha }}
           name: v${{ env.GitVersion_SemVer }}
-          files: ./VCF.Core/bin/Debug/netstandard2.1/VampireCommandFramework.dll
+          files: ./nuget/*.nupkg
           fail_on_unmatched_files: true
           prerelease: false
           tag_name: v${{ env.GitVersion_SemVer }}
