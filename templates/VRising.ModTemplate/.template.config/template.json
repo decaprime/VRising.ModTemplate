@@ -28,7 +28,7 @@
     "UseWetstone": {
       "type": "parameter",
       "datatype": "bool",
-      "isRequired": true,
+      "isRequired": false,
       "description": "To automatically setup and use Wetstone.",
       "defaultValue": "false",
       "displayName": "Use Wetstone"
