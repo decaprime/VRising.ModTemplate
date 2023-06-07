@@ -10,11 +10,10 @@ namespace MOUTHWASH;
 [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
 #if(UseVCF)
 [BepInDependency("gg.deca.VampireCommandFramework")]
-[VampireCommandFramework.Breadstone.Reloadable]
 #endif
-#if(UseWetstone)
-[BepInDependency("xyz.molenzwiebel.wetstone")]
-[Wetstone.API.Reloadable]
+#if(UseBloodstone)
+[BepInDependency("gg.deca.Bloodstone")]
+[Bloodstone.API.Reloadable]
 #endif
 public class Plugin : BasePlugin
 {

@@ -2,18 +2,19 @@
   "$schema": "http://json.schemastore.org/dotnetcli.host",
   "symbolInfo": {    
     "description": {
-      "longName": "description"
+      "longName": "description",
+      "shortName": "desc"
     },
     "UseVCF": {
       "longName": "use-vcf",
-      "shortName": ""
+      "shortName": "vcf"
     },
-    "UseWetstone": {
-        "longName": "use-wetstone",
-        "shortName": ""
-    },
+    "UseBloodstone": {
+        "longName": "use-bloodstone",
+        "shortName": "bloodstone"
+    }
   },
   "usageExamples": [
-    "dotnet run --use-vcf"
+    "dotnet new vrising mod -n GasMod -vcf -bloodstone"
   ]
 }

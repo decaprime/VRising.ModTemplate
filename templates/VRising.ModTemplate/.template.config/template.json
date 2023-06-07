@@ -14,29 +14,40 @@
     "type": "project"
   },
   "sourceName": "MOUTHWASH",
-  "preferNameDirectory": true,  
+  "preferNameDirectory": true,
+  "preferDefaultName": false,
+  "defaultName": "MyFirstVRisingMod",
+  "postActions": [{
+    "description": "Getting Started with V Rising Modding",
+    "actionId": "AC1156F7-BB77-4DB8-B28F-24EEBCCA1E5C",
+    "manualInstructions": [
+      {
+        "text": "Visit https://wiki.vrisingmods.com/ and join https://vrisingmods.com/discord to chat with other modders."
+      }
+    ]
+  }],
   "symbols": {
     "description": {
       "type": "parameter",
       "displayName": "Description",
-      "datatype": "string",      
-      "isRequired": true,
+      "datatype": "string",
+      "isRequired": false,
       "description": "Description of ",
       "replaces": "My first plugin",
-      "defaultValue": "My first mod"
+      "defaultValue": "Created with VRising.ModTemplate, you should edit this."
     },
-    "UseWetstone": {
+    "UseBloodstone": {
       "type": "parameter",
       "datatype": "bool",
       "isRequired": false,
-      "description": "To automatically setup and use Wetstone.",
+      "description": "To automatically setup and use Bloodstone.",
       "defaultValue": "false",
-      "displayName": "Use Wetstone"
+      "displayName": "Use Bloodstone"
     },
     "UseVCF": {
       "type": "parameter",
       "datatype": "bool",
-      "isRequired": true,
+      "isRequired": false,
       "description": "To automatically setup and use VampireCommandFramework.",
       "defaultValue": "false",
       "displayName": "Use VCF"
