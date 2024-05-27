@@ -23,6 +23,7 @@ jobs:
 
     - name: Install, Create, and Build .NET Template
       run: |
+        dotnet new install vrising.modtemplate
         dotnet new vrisingmod -n FullTemplateTest --use-vcf --use-bloodstone
         cd FullTemplateTest
         dotnet build -warnaserror
